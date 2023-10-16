@@ -1,0 +1,1 @@
+ALTER TABLE medicos add status BOOLEAN DEFAULT TRUE;
