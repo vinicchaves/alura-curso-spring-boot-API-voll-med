@@ -1,4 +1,4 @@
-package com.example.demo.endereco;
+package com.example.demo.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

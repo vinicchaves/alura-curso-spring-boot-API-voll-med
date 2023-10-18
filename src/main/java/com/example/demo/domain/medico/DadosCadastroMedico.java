@@ -1,7 +1,6 @@
-package com.example.demo.medico;
+package com.example.demo.domain.medico;
 
-import com.example.demo.endereco.DadosEndereco;
-import jakarta.persistence.Enumerated;
+import com.example.demo.domain.endereco.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -15,7 +14,7 @@ public record DadosCadastroMedico(
         @Email
         String email,
         @NotBlank
-        @Pattern(regexp="\\d{4,6}")
+        @Pattern(regexp="\\d{4,6}", message =" deve conter entre 4 e 6 dígitos")
         String crm,
 
         @NotBlank

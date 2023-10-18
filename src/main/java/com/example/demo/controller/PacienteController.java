@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
-import com.example.demo.paciente.DadosCadastroPaciente;
-import com.example.demo.paciente.Paciente;
-import com.example.demo.paciente.PacienteRepository;
+import com.example.demo.domain.paciente.DadosCadastroPaciente;
+import com.example.demo.domain.paciente.Paciente;
+import com.example.demo.domain.paciente.PacienteRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.medico.*;
+import com.example.demo.domain.medico.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -41,15 +41,19 @@ return ResponseEntity.created(uri).body(medicoCriado);
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity excluir(@PathVariable Long id){
-        medicoRepository.deleteById(id);
-        return ResponseEntity.noContent().build();
+
+            medicoRepository.deleteById(id);
+            return ResponseEntity.noContent().build();
+
     }
 
     @GetMapping("/{id}")
     public ResponseEntity detalhar(@PathVariable Long id){
+
         var medico = medicoRepository.getReferenceById(id);
         DadosListagemMedico medicoDetalhado = new DadosListagemMedico(medico);
         return ResponseEntity.ok(medicoDetalhado);
+
     }
 
     @PutMapping

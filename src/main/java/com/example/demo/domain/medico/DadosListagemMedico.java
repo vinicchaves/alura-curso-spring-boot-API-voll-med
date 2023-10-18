@@ -1,4 +1,4 @@
-package com.example.demo.medico;
+package com.example.demo.domain.medico;
 
 public record DadosListagemMedico(Long id,String nome, String email, String crm, Boolean status, Especialidade especialidade) {
     public DadosListagemMedico(Medico medico) {

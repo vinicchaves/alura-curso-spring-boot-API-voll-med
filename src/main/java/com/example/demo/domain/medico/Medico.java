@@ -1,6 +1,6 @@
-package com.example.demo.medico;
+package com.example.demo.domain.medico;
 
-import com.example.demo.endereco.Endereco;
+import com.example.demo.domain.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 

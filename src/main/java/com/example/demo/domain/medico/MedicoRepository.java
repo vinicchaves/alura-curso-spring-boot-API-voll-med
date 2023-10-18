@@ -1,4 +1,4 @@
-package com.example.demo.medico;
+package com.example.demo.domain.medico;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

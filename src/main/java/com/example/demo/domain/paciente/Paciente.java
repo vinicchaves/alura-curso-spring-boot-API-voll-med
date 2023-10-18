@@ -1,4 +1,4 @@
-package com.example.demo.paciente;
+package com.example.demo.domain.paciente;
 
 import jakarta.persistence.*;
 import lombok.*;
